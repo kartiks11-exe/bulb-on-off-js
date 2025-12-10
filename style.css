@@ -1,0 +1,54 @@
+/* Center everything on page */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.app {
+  text-align: center;
+}
+
+/* Bulb base style */
+.bulb {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px auto;
+  background: #444;              /* default: off */
+  box-shadow: 0 0 15px #000;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Bulb ON state */
+.bulb.on {
+  background: #ffe066;           /* yellowish */
+  box-shadow: 0 0 30px #ffe066, 0 0 60px #ffe066;
+}
+
+/* Button styling */
+button {
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #1e90ff;
+  color: white;
+  transition: transform 0.1s, opacity 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.97);
+}
